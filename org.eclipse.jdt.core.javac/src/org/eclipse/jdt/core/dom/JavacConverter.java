@@ -1986,6 +1986,7 @@ class JavacConverter {
 				} else {
 					jdtPattern.setPatternVariable(pv);
 				}
+				return jdtPattern;
 			} else if (jcPattern instanceof JCRecordPattern jcRecordPattern) {
 				RecordPattern jdtPattern = this.ast.newRecordPattern();
 				commonSettings(jdtPattern, jcRecordPattern);
